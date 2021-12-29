@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema-org/draft-07/schema#",
+  "type": "String",
+  "javaType": "dto.UpdateItemRs",
+  "description": "Ответ на запрос по обновлению товара"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema-org/draft-07/schema#",
+  "type": "object",
+  "javaType": "dto.DeleteItemRq",
+  "description": "Запрос на удаление товара",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "id"
+    }
+  }
+}

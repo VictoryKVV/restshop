@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema-org/draft-07/schema#",
+  "type": "String",
+  "javaType": "dto.DeleteItemRs",
+  "description": "Ответ на запрос на удаление товара"
+}

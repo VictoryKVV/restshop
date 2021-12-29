@@ -1,0 +1,1 @@
+{"uuid":"ff931b94-6075-456c-a3c7-35fe4f0b3f79","name":"restshop","children":["7ff30aec-3144-4105-bf4d-3db3ac51d00a"],"befores":[],"afters":[{"name":"deleteItem","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1640784348057,"stop":1640784348189}],"links":[],"start":1640784345324,"stop":1640784348189}

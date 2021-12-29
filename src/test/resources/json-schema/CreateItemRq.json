@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema-org/draft-07/schema#",
+  "type": "object",
+  "javaType": "dto.CreateItemRq",
+  "description": "Запрос на создание товара",
+  "required": [
+    "name",
+    "section",
+    "description",
+    "color",
+    "size",
+    "price",
+    "params",
+    "photo"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Название",
+      "maxLength": 70
+    },
+    "section": {
+      "type": "string",
+      "description": "раздел",
+      "maxLength": 70
+    },
+    "description": {
+      "type": "string",
+      "description": "Описание",
+      "maxLength": 70
+    },
+    "color": {
+      "type": "string",
+      "description": "цвет",
+      "maxLength": 70
+    },
+    "size": {
+      "type": "string",
+      "description": "Размеры доступные",
+      "maxLength": 70
+    },
+    "price": {
+      "type": "long",
+      "description": "Цена",
+      "maxLength": 70
+    },
+    "params": {
+      "type": "string",
+      "description": "Параметры",
+      "maxLength": 70
+    },
+    "photo": {
+      "type": "string",
+      "description": "Фото товара через base64 ",
+      "maxLength": 100
+    }
+  }
+}
