@@ -3,6 +3,7 @@ import dto.*;
 import helpers.BaseResponse;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
+import io.qameta.allure.Link;
 import org.testng.annotations.*;
 import ru.sbtqa.tag.datajack.Stash;
 import stepDefs.StepDefinitions;
@@ -39,6 +40,7 @@ public class GetItemTest {
 
     @Test(description = "Тест - запрос отображения ранее созданного товара")
     @Description("Проверка запроса товара в онлайн магазине")
+    @Link(name = "Сайт с описанием магазина", url = "https://testbase.atlassian.net/wiki/spaces/SHOP/overview")
     public void getItem() throws Exception {
         Allure.step("формируем тело запроса");
         StepDefinitions stepDefinitions = new StepDefinitions();

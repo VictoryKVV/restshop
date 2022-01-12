@@ -6,6 +6,7 @@ import dto.UpdateItemRqDto;
 import helpers.BaseResponse;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
+import io.qameta.allure.Link;
 import org.testng.annotations.*;
 import ru.sbtqa.tag.datajack.Stash;
 import stepDefs.StepDefinitions;
@@ -42,6 +43,7 @@ public class UpdateItemTest {
 
     @Test(description = "Тест - изменение ранее созданного товара")
     @Description("Проверка изменения параметров товара в онлайн магазине")
+    @Link(name = "Сайт с описанием магазина", url = "https://testbase.atlassian.net/wiki/spaces/SHOP/overview")
     public void updateItem() throws Exception {
         Allure.step("формируем тело запроса");
         StepDefinitions stepDefinitions = new StepDefinitions();

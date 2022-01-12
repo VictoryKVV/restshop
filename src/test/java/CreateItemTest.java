@@ -4,7 +4,9 @@ import dto.DeleteItemRqDto;
 import helpers.BaseResponse;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
+import io.qameta.allure.Link;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ru.sbtqa.tag.datajack.Stash;
 import stepDefs.StepDefinitions;
@@ -14,6 +16,7 @@ public class CreateItemTest {
 
     private static final String CREATE_ITEM_RESPONSE = "CreateItemTestCreateResponse";
 
+    @Link(name = "Сайт с описанием магазина", url = "https://testbase.atlassian.net/wiki/spaces/SHOP/overview")
 
     @Test(description = "Тест - Создание нового товара")
     @Description("Проверка создания товара в онлайн магазине")

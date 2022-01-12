@@ -5,6 +5,7 @@ import dto.DeleteItemRqDto;
 import helpers.BaseResponse;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
+import io.qameta.allure.Link;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.sbtqa.tag.datajack.Stash;
@@ -41,6 +42,7 @@ public class DeleteItemTest {
 
     @Test(description = "Тест - Удаление ранее созданного товара")
     @Description("Проверка удаления товара в онлайн магазине")
+    @Link(name = "Сайт с описанием магазина", url = "https://testbase.atlassian.net/wiki/spaces/SHOP/overview")
     public void deleteItem() throws Exception {
 
         Allure.step("получаем параметры ранее созданного товара для уаления");
